@@ -1,6 +1,6 @@
 ---
-title: 功能介绍
-category: 入门篇
+title: 功能
+category: 基础篇
 order: 1
 ---
 
