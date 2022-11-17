@@ -15,14 +15,14 @@ author:
   email:
   twitter: # twitter username without the @ symbol
 social:
-  name: Edition Template
+  name: 量化交易笔记
   links:
-    - https://github.com/CloudCannon/edition-jekyll-template
+    - https://dumengru.github.io/docs_codenotes/
 
 # -----
 # Build
 
-timezone: Etc/UTC
+timezone: Asia/Shanghai
 
 permalink: pretty
 

@@ -1,7 +1,7 @@
 ---
-title: Facebook
-category: Contact Syncing
-order: 1
+title: 功能介绍
+category: 基础篇
+order: 2
 ---
 
 Sync your Facebook contacts with ChatApp. Any of your Facebook friends with ChatApp accounts are automatically added to your contact list!
