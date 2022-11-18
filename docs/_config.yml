@@ -1,23 +1,23 @@
 # ----
 # Site
 
-title: Edition Template
-url: "https://long-pig.cloudvent.net"
+title: DocsVnpy
+url: "https://dumengru.github.io/docs_vnpy/"
 baseurl:
 google_analytics_key:
 show_full_navigation: true
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
-description: Product documentation template for Jekyll.
-author:
+description: Vnpy量化交易框架文档
+author: 杜梦如
   name:
-  email:
+  email: 393570727@qq.com
   twitter: # twitter username without the @ symbol
 social:
-  name: 量化交易笔记
+  name: DocsVnpy
   links:
-    - https://dumengru.github.io/docs_codenotes/
+    - https://dumengru.github.io/docs_vnpy/
 
 # -----
 # Build

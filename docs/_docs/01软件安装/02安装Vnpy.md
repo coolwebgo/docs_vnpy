@@ -1,6 +1,6 @@
 ---
-title: Phone
-category: Contact Syncing
+title: 安装Vnpy
+category: 软件安装
 order: 2
 ---
 

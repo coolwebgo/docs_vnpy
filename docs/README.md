@@ -13,7 +13,7 @@ Find more templates, themes and step-by-step Jekyll tutorials at [CloudCannon Ac
 
 ## Features
 
-* Two column layout
+- Two column layout
 * Full text search
 * Pre-styled components
 * Auto-generated navigation based on category
@@ -34,9 +34,9 @@ Edition was built with [Jekyll](http://jekyllrb.com/) version 3.3.1, but should 
 
 Install the dependencies with [Bundler](http://bundler.io/):
 
-~~~bash
+```bash
 $ bundle install
-~~~
+```
 
 Run `jekyll` commands through Bundler to ensure you're using the right versions:
 

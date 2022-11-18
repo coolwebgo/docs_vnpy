@@ -1,6 +1,6 @@
 ---
-title: Facebook
-category: Introduction
+title: 安装Talib
+category: 软件安装
 order: 1
 ---
 
