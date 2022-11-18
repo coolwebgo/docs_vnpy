@@ -10,8 +10,8 @@ show_full_navigation: true
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
 description: Vnpy量化交易框架文档
-author: 杜梦如
-  name:
+author:
+  name: 杜梦如
   email: 393570727@qq.com
   twitter: # twitter username without the @ symbol
 social:
