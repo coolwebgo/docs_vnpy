@@ -1,6 +1,6 @@
 ---
 title: 安装Vnpy
-category: 软件安装
+category: 代码安装
 order: 2
 ---
 
