@@ -1,17 +1,19 @@
 ---
-title: 安装Talib
+title: 安装talib
 category: 代码安装
 order: 1
+url: [](https://github.com/dumengru/docs_vnpy/tree/master/docs/_docs)
 ---
 
-Sync your Facebook contacts with ChatApp. Any of your Facebook friends with ChatApp accounts are automatically added to your contact list!
+## 简介
+talib是一款专门计算技术指标的python第三方库, 直接使用`pip install talib`会报错. 而vnpy项目又依赖这个库, 因此在安装vnpy之前, 建议先把talib装好
 
-> Signing up with Facebook automatically starts syncing contacts.
+## 安装步骤
+1. 进入[这里](https://www.lfd.uci.edu/~gohlke/pythonlibs/#ta-lib)下载对应版本的ta-lib安装包
+2. 在下载好talib安装包的目录打开cmd, 然后使用`pip install TA_LIB...`(完整文件名)即可
 
-To sync your contacts:
+> 也可在任意目录打开cmd, 然后输入`pip install `, 再把文件直接拖到cmd窗口, 回车即可
 
-1. Open your *User Settings*
-2. Select the **Connect Facebook** button
-3. Authorise ChatApp
+## 宝藏资源
 
-![](//placehold.it/800x600)
+[talib参考文档](https://github.com/HuaRongSAO/talib-document)

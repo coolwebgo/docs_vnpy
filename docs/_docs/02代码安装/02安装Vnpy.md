@@ -4,15 +4,26 @@ category: 代码安装
 order: 2
 ---
 
-Sync your phone contacts with ChatApp. ChatApp saves your phone contacts and adds anyone with an email address to your contact list!
+## 简介
 
-> Syncing contacts with your phone restores any previously synced contacts.
+实际名为vnpy的这个第三方库只包含很少的内容, 我们平时提到的vnpy是指整个vnpy系统, 包括vnpy核心部分以及其他扩展功能模块. 
 
-To sync your contacts:
+## 安装vnpy
 
-1. Open your *User Settings* on your phone app
-2. Select the **Sync Contacts** button
-3. Authorise ChatApp permissions
-4. Select some or all of your contacts
+```python
+pip install vnpy
+```
 
-![](//placehold.it/800x600)
+## 安装功能模块
+
+vn.py在github和gitee的仓库中目前有76个工具包(20221122), 可以根据需要有选择性的安装一些模块
+![](../../images/202211221108.png)
+
+```python
+# 安装VeighNa框架的CTA策略模块
+pip install vnpy_ctastrategy
+
+# 安装VeighNa框架的数据管理模块
+pip install vnpy_datamanager
+...
+```

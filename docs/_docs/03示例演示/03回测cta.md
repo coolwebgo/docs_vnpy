@@ -2,17 +2,67 @@
 title: 回测cta
 category: 运行示例
 order: 3
+url: [](https://github.com/dumengru/docs_vnpy/tree/master/docs/_docs)
 ---
 
-## 简介
+## CTA简介
+CTA策略(Commodity Trading Advisor Strategy), 称为商品交易顾问策略, 又称管理期货策略(Managed Futures), 它是指由专业管理人投资于期货市场, 利用期货市场上升或者下降的趋势获利的一种投资策略
+
+量化CTA: 基于机器的判断, 基金管理人通过分析建立数量化的交易策略模型, 由模型产生的买卖信号进行投资决策
+
+## CTA回测
+```python
+from vnpy.trader.optimize import OptimizationSetting
+from vnpy_ctastrategy.backtesting import BacktestingEngine
+from vnpy_ctastrategy.strategies.atr_rsi_strategy import (
+    AtrRsiStrategy,
+)
+from datetime import datetime
+
+# 1. 创建回测引擎
+engine = BacktestingEngine()
+# 2. 设置回测参数
+engine.set_parameters(
+    vt_symbol="IF888.CFFEX",
+    interval="1m",
+    start=datetime(2019, 1, 1),
+    end=datetime(2019, 4, 30),
+    rate=0.3/10000,
+    slippage=0.2,
+    size=300,
+    pricetick=0.2,
+    capital=1_000_000,
+)
+# 3. 添加交易策略
+engine.add_strategy(AtrRsiStrategy, {})
+# 4. 加载回测数据(没有买就没有数据)
+engine.load_data()
+# 5. 运行回测
+engine.run_backtesting()
+# 6. 统计回测结果
+df = engine.calculate_result()
+engine.calculate_statistics()
+engine.show_chart()
+
+```
+
+## 参数优化
+```python
+# 设置参数优化参数
+setting = OptimizationSetting()
+setting.set_target("sharpe_ratio")
+setting.add_parameter("atr_length", 25, 27, 1)
+setting.add_parameter("atr_ma_length", 10, 30, 10)
+
+# 遗传算法优化
+engine.run_ga_optimization(setting)
+# 穷举算法优化
+# engine.run_bf_optimization(setting)
+```
 
 
-## 踩坑记
+## 运行提示
 
-1. 
-2. 
-3. 
-
-
-## 成功标志
-![](../../images/202211212217.png)
+1. 如果正常运行却输出为空, 大概率是缺少数据
+2. 默认本地数据存放路径是C盘用户目录.vntrader文件夹下的database.db中
+3. 如果购买了vnpy官方推荐的一些数据源数据, 缺少数据的时候会自动下载数据; 如果不想购买数据, 网上也有很多免费的分钟级别数据, 但是需要自己将那些数据转换成vnpy的数据格式.(此事说来话长, 暂且略过...)
