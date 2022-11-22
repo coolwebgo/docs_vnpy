@@ -1,68 +1,43 @@
-# Edition
+## 文档目录
+#### 入门
+> 假设你对编程一无所知
+1. 量化交易流程
+2. [Windows安装指南](https://www.vnpy.com/docs/cn/windows_install.html)
+3. [启动VeighNa Station](https://www.vnpy.com/docs/cn/veighna_station.html)
+4. [启动VeighNa Trader](https://www.vnpy.com/docs/cn/veighna_trader.html)
+5. [CTP交易接口](https://www.vnpy.com/docs/cn/gateway.html)
+6. [TTS交易接口](https://www.vnpy.com/docs/cn/gateway.html)
+7. [数据配置](https://www.vnpy.com/docs/cn/database.html)
+8. [回测策略](https://www.vnpy.com/docs/cn/cta_backtester.html)
+9. [启动策略](https://www.vnpy.com/docs/cn/cta_strategy.html)
+10. [价差套利](https://www.vnpy.com/docs/cn/spread_trading.html)
+11. [本地仿真](https://www.vnpy.com/docs/cn/paper_account.html)
+12. [数据管理](https://www.vnpy.com/docs/cn/data_manager.html)
+13. [事前风控](https://www.vnpy.com/docs/cn/risk_manager.html)
+14. [实时K线](https://www.vnpy.com/docs/cn/chart_wizard.html)
 
-Product documentation template for Jekyll. Browse through a [live demo](https://long-pig.cloudvent.net/).
-Start documenting your product, application, service or website with this configurable theme.
+#### 基础
+> 假设你对python一知半解
+1. 源码安装
+- 安装talib
+- 安装源码
+2. 代码启动
+3. 策略编写
+- 模板/逻辑
+- 注意事项
+4. 策略回测
+5. [脚本运行](https://www.vnpy.com/docs/cn/script_trader.html)
+6. 数据管理
+7. K线合成
 
-![Edition template screenshot](images/_screenshot.png)
-
-Edition was made by [CloudCannon](http://cloudcannon.com/), the Cloud CMS for Jekyll.
-
-Find more templates, themes and step-by-step Jekyll tutorials at [CloudCannon Academy](https://learn.cloudcannon.com/).
-
-[![Deploy to CloudCannon](https://buttons.cloudcannon.com/deploy.svg)](https://app.cloudcannon.com/register#sites/connect/github/CloudCannon/edition-jekyll-template)
-
-## Features
-
-- Two column layout
-* Full text search
-* Pre-styled components
-* Auto-generated navigation based on category
-* Optimised for editing in [CloudCannon](http://cloudcannon.com/)
-* Change log
-* RSS/Atom feed
-* SEO tags
-* Google Analytics
-
-## Setup
-
-1. Add your site and author details in `_config.yml`.
-2. Get a workflow going to see your site's output (with [CloudCannon](https://app.cloudcannon.com/) or Jekyll locally).
-
-## Develop
-
-Edition was built with [Jekyll](http://jekyllrb.com/) version 3.3.1, but should support newer versions as well.
-
-Install the dependencies with [Bundler](http://bundler.io/):
-
-```bash
-$ bundle install
-```
-
-Run `jekyll` commands through Bundler to ensure you're using the right versions:
-
-~~~bash
-$ bundle exec jekyll serve
-~~~
-
-## Editing
-
-Edition is already optimised for adding, updating and removing documentation pages in CloudCannon.
-
-### Documentation pages
-
-* Add, update or remove a documentation page in the *Documentation* collection.
-* Change the category of a documentation page to move it to another section in the navigation.
-* Documentation pages are organised in the navigation by category, with URLs based on the path inside the `_docs` folder.
-
-### Change log
-
-* Add, update or remove change log entries from your posts.
-* Tag entries as minor or major in the front matter.
-
-### Search
-
-* Add `excluded_in_search: true` to any documentation page's front matter to exclude that page in the search results.
-
-### Navigation
-
-* Change `site.show_full_navigation` to control all or only the current navigation group being open.
+#### 进阶
+> 假设你对源码兴趣浓厚
+1. 通用类组件逻辑
+- vnpy.event，简洁易用的事件驱动引擎，作为事件驱动型交易程序的核心
+- vnpy.chart，Python高性能K线图表，支持大数据量图表显示以及实时数据更新功能
+- vnpy.trader.database，集成了几大数据库管理端模块，以支持数据库读写性能和未来的新数据库扩展
+- vnpy.trader.datafeed，提供标准化接口BaseDataFeed，带来了更加灵活的数据服务支持
+2. 数据接口源码
+3. 回测源码
+4. 仿真交易源码
+5. 事前风控源码

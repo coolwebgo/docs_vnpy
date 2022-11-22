@@ -4,6 +4,10 @@ category: 示例演示
 order: 2
 ---
 
+> [文档纠错/补充](https://github.com/dumengru/docs_vnpy/tree/master/docs/_docs)
+
+---
+
 ## 简介
 
 参考: [脚本策略交易模块](https://www.vnpy.com/docs/cn/script_trader.html)

@@ -2,7 +2,10 @@
 title: 安装talib
 category: 代码安装
 order: 1
-url: [](https://github.com/dumengru/docs_vnpy/tree/master/docs/_docs)
+---
+
+> [文档纠错/补充](https://github.com/dumengru/docs_vnpy/tree/master/docs/_docs)
+
 ---
 
 ## 简介
@@ -17,3 +20,6 @@ talib是一款专门计算技术指标的python第三方库, 直接使用`pip in
 ## 宝藏资源
 
 [talib参考文档](https://github.com/HuaRongSAO/talib-document)
+
+
+> [文档纠错/补充](https://github.com/dumengru/docs_vnpy/tree/master/docs/_docs)
