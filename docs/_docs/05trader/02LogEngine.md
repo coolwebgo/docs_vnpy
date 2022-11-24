@@ -1,9 +1,10 @@
 ---
 title: 日志子引擎
 category: trader
-order: 02
+order: 2
 ---
-
+> [文档纠错/补充](https://github.com/dumengru/docs_vnpy/tree/master/docs/_docs)
+---
 ## class LogEngine
 1. 传入一个主引擎和一个事件引擎
 2. 根据配置判断是否启动日志引擎: SETTINGS["log.active"]

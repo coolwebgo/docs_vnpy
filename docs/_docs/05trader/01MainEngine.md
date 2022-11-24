@@ -1,9 +1,10 @@
 ---
 title: 主引擎
 category: trader
-order: 01
+order: 1
 ---
-
+> [文档纠错/补充](https://github.com/dumengru/docs_vnpy/tree/master/docs/_docs)
+---
 ## class MainEngine
 整个系统都通过主引擎调度
 1. 传入一个事件引擎或新建一个事件引擎

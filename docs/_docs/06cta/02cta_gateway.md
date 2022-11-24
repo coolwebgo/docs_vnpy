@@ -1,6 +1,6 @@
 ---
-title: 功能介绍
-category: 基础篇
+title: cta_gateway
+category: cta
 order: 2
 ---
 

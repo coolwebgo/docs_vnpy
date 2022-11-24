@@ -3,11 +3,8 @@ title: 安装talib
 category: 代码安装
 order: 1
 ---
-
 > [文档纠错/补充](https://github.com/dumengru/docs_vnpy/tree/master/docs/_docs)
-
 ---
-
 ## 简介
 talib是一款专门计算技术指标的python第三方库, 直接使用`pip install talib`会报错. 而vnpy项目又依赖这个库, 因此在安装vnpy之前, 建议先把talib装好
 
