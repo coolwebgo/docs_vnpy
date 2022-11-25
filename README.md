@@ -36,3 +36,4 @@
 3. vnpy_ctp: ctp网关逻辑
 4. vnpy_ctastrategy: cta策略逻辑
 5. vnpy_datamanager: 数据管理逻辑
+6. vnpy_sqlite: sqlite数据库的实现
