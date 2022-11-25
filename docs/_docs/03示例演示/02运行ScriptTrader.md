@@ -3,9 +3,7 @@ title: 运行ScriptTrader
 category: 示例演示
 order: 2
 ---
-
 > [文档纠错/补充](https://github.com/dumengru/docs_vnpy/tree/master/docs/_docs)
-
 ---
 
 ## 简介

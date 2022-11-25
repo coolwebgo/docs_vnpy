@@ -5,6 +5,7 @@ order: 4
 ---
 > [文档纠错/补充](https://github.com/dumengru/docs_vnpy/tree/master/docs/_docs)
 ---
+
 ## class EmailEngine
 1. 传入一个主引擎和一个事件引擎
 2. 创建一个线程(专门处理邮件): self.thread

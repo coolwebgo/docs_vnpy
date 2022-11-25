@@ -22,22 +22,17 @@
 - 安装talib
 - 安装源码
 2. 代码启动
-3. 策略编写
+3. 数据管理
+4. 策略编写
 - 模板/逻辑
 - 注意事项
-4. 策略回测
-5. [脚本运行](https://www.vnpy.com/docs/cn/script_trader.html)
-6. 数据管理
-7. K线合成
+5. 策略回测
+6. 策略运行
 
 #### 进阶
 > 假设你对源码兴趣浓厚
-1. 通用类组件逻辑
-- vnpy.event，简洁易用的事件驱动引擎，作为事件驱动型交易程序的核心
-- vnpy.chart，Python高性能K线图表，支持大数据量图表显示以及实时数据更新功能
-- vnpy.trader.database，集成了几大数据库管理端模块，以支持数据库读写性能和未来的新数据库扩展
-- vnpy.trader.datafeed，提供标准化接口BaseDataFeed，带来了更加灵活的数据服务支持
-2. 数据接口源码
-3. 回测源码
-4. 仿真交易源码
-5. 事前风控源码
+1. vnpy/event: vnpy事件处理逻辑
+2. vnpy/engine: vnpy引擎处理逻辑
+3. vnpy_ctp: ctp网关逻辑
+4. vnpy_ctastrategy: cta策略逻辑
+5. vnpy_datamanager: 数据管理逻辑

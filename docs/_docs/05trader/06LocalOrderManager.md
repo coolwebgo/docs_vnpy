@@ -5,6 +5,7 @@ order: 6
 ---
 > [文档纠错/补充](https://github.com/dumengru/docs_vnpy/tree/master/docs/_docs)
 ---
+
 ## class LocalOrderManager
 1. 传入一个网关和订单前缀
 2. 创建本地订单字典
