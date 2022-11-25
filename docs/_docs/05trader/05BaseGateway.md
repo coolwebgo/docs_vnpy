@@ -3,6 +3,7 @@ title: 网关父类
 category: trader
 order: 5
 ---
+
 > [文档纠错/补充](https://github.com/dumengru/docs_vnpy/tree/master/docs/_docs)
 ---
 
