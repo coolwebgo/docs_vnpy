@@ -90,6 +90,7 @@ order: 1
 > 4. 未解决问题: 如何向self._handlers中添加新的类型事件呢?
 
 ## defaultdict字典
+
 ```python
 from collections import defaultdict
 
@@ -123,6 +124,7 @@ print("2: ", handler)
 - 计时器类型不在self._handlers中所以不会执行(未注册)
 
 **计时器测试**
+
 ```python
 def print_timer(e: Event):
     print("计时器启动: ", e.type)

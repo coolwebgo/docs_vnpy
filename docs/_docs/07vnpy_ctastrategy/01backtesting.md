@@ -13,6 +13,7 @@ order: 1
 
 ## 流程解析
 回顾一下backtesting_demo中的回测流程
+
 ```python
 # 1. 创建回测引擎对象
 engine = BacktestingEngine()
@@ -39,6 +40,7 @@ df = engine.calculate_result()
 engine.calculate_statistics()
 engine.show_chart()
 ```
+
 #### 参数设置
 1. vt_symbol是"合约.交易所"全称, 至于合约名称大小写, 合约月份3位/4位数, 需要根据交易标准来定(因为这里是回测, 从数据库中拿数据, 因此这个名称可以是数据库中自己定义的名称)
 2. rate: 手续费率, 因为只有一种设置方式, 因此不管品种是固定/浮动手续费, 单/双边手续费或是平今/平历史手续费统统都只能近似转化为比率形式
@@ -58,6 +60,7 @@ engine.show_chart()
 1. 数据回放开始前执行`self.strategy.on_init()`, 这里其实就是回调了策略中的`on_init`函数
 2. 初始化完成后首先执行了`self.strategy.on_start()`, 这里其实就是回调了策略中的`on_start`函数
 3. 在数据回放过程中, 如果是Bar回测, 就执行`self.new_bar`, 如果是Tick回测就执行`self.new_tick`, 我们以Bar回测为例, 它主要完成了以下几步
+
 ```python
 def new_bar(self, bar: BarData) -> None:
     """"""
@@ -73,6 +76,7 @@ def new_bar(self, bar: BarData) -> None:
     # 5. 更新日收盘价
     self.update_daily_close(bar.close_price)
 ```
+
 - 以`cross_limit_order`为例, 如果有发单就回调`on_order`, 然后模拟订单撮合, 如果订单撮合成功, 再回调`on_trade`, 同时保存`TradeData`, 方便结束后统计收益.
 - 数据回放完毕, 所有成交单信息都保存在`self.trades`中
 

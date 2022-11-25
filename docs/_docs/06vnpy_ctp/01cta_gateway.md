@@ -70,6 +70,7 @@ CTP系统主要包括行情和交易两块内容, 分别对应两个文件"thost
 这里使用"tts_gateway"做测试(和"ctp_gateway"完全一致)
 
 1. 首先在"vnpy_tts/gateway/tts_gateway.py"文件中的`TtsMdApi`类中添加三个`print`标记
+
 ```pyhton
 def onFrontConnected(self) -> None:
     """服务器连接成功回报"""
@@ -87,7 +88,9 @@ def onRtnDepthMarketData(self, data: dict) -> None:
     symbol: str = data["InstrumentID"]
     print("onRtnDepthMarketData_tick数据回调: ", data)
 ```
+
 2. 然后执行以下代码
+
 ```python
 import time
 from vnpy_tts.gateway.tts_gateway import TtsMdApi, TtsGateway
