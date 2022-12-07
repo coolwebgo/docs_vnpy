@@ -25,21 +25,3 @@ vnpy使用peewee库来管理各种数据库接口, "vnpy_sqlite/sqlite_database.
 2. save_bar_data/load_bar_data/delete_bar_data: 在DbBarData数据表中保存/加载/删除bar数据
 3. save_tick_data/load_tick_data/delete_tick_data: 在DbTickData数据表中保存/加载/删除tick数据
 
-
-
-<script src="https://giscus.app/client.js"
-        data-repo="dumengru/dumengru.github.io"
-        data-repo-id="R_kgDOIj5srQ"
-        data-category="General"
-        data-category-id="DIC_kwDOIj5src4CS83P"
-        data-mapping="og:title"
-        data-strict="1"
-        data-reactions-enabled="1"
-        data-emit-metadata="1"
-        data-input-position="top"
-        data-theme="preferred_color_scheme"
-        data-lang="zh-CN"
-        data-loading="lazy"
-        crossorigin="anonymous"
-        async>
-</script>
